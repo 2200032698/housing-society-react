@@ -1,19 +1,23 @@
 {
-  "name": "housing-society-recreation",
+  "name": "housing-society-react",
   "private": true,
   "version": "2.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
   "dependencies": {
     "@vitejs/plugin-react": "4.3.4",
-    "vite": "6.3.5",
+    "lucide-react": "0.468.0",
     "react": "19.1.1",
     "react-dom": "19.1.1",
-    "lucide-react": "0.468.0"
+    "vite": "6.3.5"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
